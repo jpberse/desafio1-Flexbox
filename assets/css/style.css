@@ -83,8 +83,10 @@
 }
 
 .contact-item {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
     flex: 0 0 10%;
-    text-align: center;
     width: 100%;
     padding: 0 2em;
     border-bottom: 1px solid;
@@ -94,11 +96,30 @@
 .contact-item button {
     width: 230px;
     height: 60px;
-    margin: 3em 2em;
+    margin: 2em;
     background-color: var(--blue-bell);
     color: var(--platinum);
     font-family: "Roboto", system-ui;
     font-size: 24px;
     font-weight: 300;
     border: none;
+}
+
+.contact-item img {
+    width: auto;
+    height: 60px;
+    border: 2px solid;
+    border-radius: 50%;
+    border-color: var(--gray);
+}
+
+.container-item-user-chat {
+    display: flex;
+    flex-direction: column;
+    font-family: "Roboto", system-ui;
+    padding-left: 1em;
+}
+
+.container-item-user-chat h2 {
+    font-weight: 400;
 }
